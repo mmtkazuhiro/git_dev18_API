@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>感情採点機</title>
+</head>
+<body>
+<h1>感情採点機</h1>
+
+<div class="explain">
+<li>7つの項目 (恐怖, 軽蔑, 不愉快,恐怖, 無関心, 悲しみ, 驚き, 幸福) で「感情」を採点します。</li>
+<li>100点満点で表示されるようになっています。</li>
+<li>カメラの使用を許可してから3秒ごとの感情を点数化できます。</li>
+</div>
+
+
+    <div id="imageDiv" style="width:420px; display:table-cell;">
+        
+        <video id="video" style="background-color: #000" autoplay></video>
+        <div id="result"></div>
+
+
+
+        <canvas id="capture_image"></canvas>
+    </div>
+
+
+   
+
+
+<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/autopoint.js"></script>
+</body>
+</html>

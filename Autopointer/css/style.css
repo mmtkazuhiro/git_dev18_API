@@ -1,0 +1,13 @@
+#video{
+  position: relative;
+}
+
+#result{
+  position: absolute;
+  top:150px;
+  left: 700px;
+}
+
+.explain{
+  padding-bottom: 5px;
+}

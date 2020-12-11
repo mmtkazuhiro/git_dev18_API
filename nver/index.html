@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>nver</title>
+</head>
+<body>
+
+
+        <h1 class="title">nber Taxi</h1>
+
+
+    <div class="sotosetumei">
+    <div class="setumei">
+        <div class="mae"><h2>ご乗車いただきありがとうございます。</h2>
+        <p>このタクシーでは経路検索後、支払い料金を算出します。<br>
+        乗車してからいつお支払いいただいても構いません。</p>
+    </div>
+
+
+        <p><div class="sotoonsei"><div class="setumeionsei"><div class="insetumeionsei">音声認識</div></div>をクリックしてから目的地を発言し、
+            入力された目的地を確認してから</div>
+        <div class="sotokensaku"><div class="setumeikensaku"><div class="insetumeikensaku">経路検索</div></div>をクリックすると目的地までの経路と距離・時間・料金が表示されます。</div></p>
+    <div class="ato">(※音声入力ではなく、直接文字を入力していただくことも可能です。)</div>
+
+    <p><div class="sotosetumeiyobi"><div class="setumeisave"><div class="insetumeisave">保存</div></div>で目的地を保存して<div class="setumeiyobi"><div class="insetumeiyobi">呼び出し</div></div>をクリックすると履歴を呼び出すことも可能です。</div></p>
+    </div>
+</div>
+
+<div class="sotomapyobi">
+<div id="gmap"></div>
+<div class="sotoyobi">
+<div class="yobidasi"><div class="inyobi">呼び出し</div></div>
+<div class="output"></div>
+</div>
+</div>
+
+
+<div class="keiro">
+<input type="text" id="toutyaku" placeholder="到着地点を入力してください" style="width:200px">
+<div class="onsei"><div class="inonsei">音声認識</div></div>
+<div class="kensaku"><div class="inkensaku">経路検索</div></div>
+<div class="save"><div class="insave">保存</div></div>
+</div>
+
+
+
+<div id="result"></div>
+<div id="pay"></div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=[key]&callback=initMap" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "Key",
+    authDomain: "gmap2-15e7a.firebaseapp.com",
+    projectId: "gmap2-15e7a",
+    storageBucket: "gmap2-15e7a.appspot.com",
+    messagingSenderId: "429570735513",
+    appId: "1:429570735513:web:43e86aab6e4ef9bfe7a708"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const newPostRef = firebase.database().ref();
+</script>
+
+    <script src="js/nver.js"></script>
+
+
+</body>
+</html>

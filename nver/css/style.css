@@ -1,0 +1,157 @@
+#gmap {
+    height: 400px;
+    width: 600px;
+   margin-left: 10px;
+  }
+
+h1{
+    border-left: solid 5px #58bfff;
+    background: #faf4ff;
+    padding: 10px;
+    width: 180px;
+    border-bottom: solid 5px #ebd5fe;
+}
+
+.keiro {
+    display: flex; 
+}
+
+.mae, .ato{
+    padding-left: 20px;
+}
+
+.sotoonsei, .sotokensaku, .sotosetumeiyobi{
+    display: flex;
+    align-items: center;
+}
+
+.sotoonsei{
+    padding-bottom: 5px;
+}
+
+.kensaku{
+    cursor: pointer;
+    cursor: hand;
+    padding-left: 3px;
+}
+
+.setumeikensaku{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.inkensaku, .insetumeikensaku{
+    width:150px;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    background-color:#1a85b6;
+    border-radius:50px;
+}
+
+.onsei{
+    padding-left: 10px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.setumeionsei{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.inonsei, .insetumeionsei{
+    width:150px;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    background-color:#34b61a;
+    border-radius:50px;
+}
+
+#pay{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.setumei{
+    padding-bottom: 10px;
+    border: solid;
+    border-color: #ace3da;
+    border-radius: 8px;
+    width: 800px;
+}
+
+.keiro{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sotosetumei{
+    padding-bottom: 10px;
+}
+
+#result{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.sotomapyobi{
+    display: flex;
+}
+
+.sotoyobi{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.inyobi, .insetumeiyobi{
+    width:150px;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    background-color:#b6851a;
+    border-radius:50px;
+}
+
+.yobidasi{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.sotosetumeiyobi{
+    padding-left: 10px;
+}
+
+.output{
+    padding-left: 5px;
+}
+
+.setumeiyobi{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.insave, .insetumeisave{
+    width:80px;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    background-color:#1ab3b6;
+    border-radius:50px;
+}
+
+.save{
+    padding-left: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.setumeisave{
+    padding-right: 5px;
+}
